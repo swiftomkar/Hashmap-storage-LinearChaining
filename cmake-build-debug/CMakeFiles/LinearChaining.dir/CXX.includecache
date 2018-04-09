@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Omkar Desai/Documents/C++/LinearChaining/LinearChaning.h
+fstream
+-
+LinkedList.h
+C:/Users/Omkar Desai/Documents/C++/LinearChaining/LinkedList.h
+jenkins.h
+C:/Users/Omkar Desai/Documents/C++/LinearChaining/jenkins.h
+
+C:/Users/Omkar Desai/Documents/C++/LinearChaining/LinkedList.h
+iostream
+-
+
+C:/Users/Omkar Desai/Documents/C++/LinearChaining/jenkins.cpp
+memory.h
+-
+jenkins.h
+C:/Users/Omkar Desai/Documents/C++/LinearChaining/jenkins.h
+
+C:/Users/Omkar Desai/Documents/C++/LinearChaining/jenkins.h
+stddef.h
+-
+stdint.h
+-
+
+C:/Users/Omkar Desai/Documents/C++/LinearChaining/main.cpp
+LinearChaning.h
+C:/Users/Omkar Desai/Documents/C++/LinearChaining/LinearChaning.h
+
