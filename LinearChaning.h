@@ -9,49 +9,39 @@
 template <typename T>
 class linearChaining{
 private:
-    int static const initSize=1024;
-    linkedlist arr[initSize];
+    int initSize;
+    linkedlist<T>* arr;
     int size;
     int capacity;
-#if 0
     void grow(){
-        linkedlist* bkp=arr;
-        T* arr=new int[capacity*2];
+        linkedlist<T>* bkp=arr;
+        arr=new linkedlist<T>[capacity*2];
         capacity=2*capacity;
         for(int i=0;i<capacity;i++)
-            arr[i]=-1;
+            arr[i].head= nullptr;
         for(int i=0;i<size;i++)
-            if(bkp[i]!=-1)
-                rehash(bkp[i]);
+            if(bkp[i].head!= nullptr) {
+                uint64_t pos = SpookyHash::Hash64(&(bkp[i].head), capacity,97);
+                linkedlist<T> temp = arr[pos];
+                temp=bkp[i];
+            }
     }
-#endif
     int hash(T key,int n){
         int ret;
         ret=key%n;
         return ret;
     }
-#if 0
-    void rehash(T key){
-        int pos=hash(key,capacity);
-        linkedlist temp=arr[pos];
-        linkedlist::iterator i(arr[pos]);
-        while(!i){
-            if(*i==key)
-                return;
-            ++i;
-        }
-        arr[pos]=new linkedlist ;
-        arr[pos]->addfront(key);
-    }
-#endif
 public:
-    linearChaining():size(1),capacity(initSize){}
+    linearChaining(int initSize):size(0),capacity(initSize),arr(new T[initSize]){}
 
     void add(T key){
+        if(2*capacity<size){
+            grow();
+        }
         //int pos=hash(key,capacity);
         uint64 spookyPos=SpookyHash::Hash64(&key, sizeof(key),97);
         uint32_t pos=spookyPos&(initSize-1);
-        linkedlist::iterator i(arr[pos]);
+        linkedlist<int>::iterator i(arr[pos]);
 
         while(!i){
             if(*i==key)
@@ -62,11 +52,11 @@ public:
         size++;
     }
 
-    int find(T key){
+    T find(T key){
         //int pos=hash(key,capacity);
         uint64 spookyPos=SpookyHash::Hash64(&key, sizeof(key),97);
         uint64_t pos=spookyPos&(initSize-1);
-        linkedlist find=arr[pos];
+        linkedlist<int> find=arr[pos];
         if(find.head== nullptr)
             return -1;
         linkedlist::iterator i(arr[pos]);

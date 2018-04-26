@@ -3,28 +3,28 @@
 //
 #pragma once
 #include <iostream>
-
+template <typename T>
 class linkedlist{
 public:
     class node{
     public:
-        int data;
+        T data;
         node* next;
-        node(int data, node* next):data(data),next(next){}
+        node(T data, node* next):data(data),next(next){}
     };
     node* head;
     int size=0;
 
     linkedlist():head(nullptr){}
     //**************************
-    void addfront(int v){
+    void addfront(T v){
         node* temp=new node(v,head);
         head=temp;
         size++;
     }
     //***********************
 
-    void addback(int v){
+    void addback(T v){
         if(head== nullptr)
             addfront(v);
         else {

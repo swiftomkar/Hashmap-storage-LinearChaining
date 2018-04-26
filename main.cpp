@@ -1,7 +1,7 @@
 #include "LinearChaning.h"
 using namespace std;
 int main() {
-    linearChaining<int> myHash;
+    linearChaining<int> myHash(10);
     myHash.add(10);
     myHash.add(15);
     for(int i=30;i<4000;i+=5){
