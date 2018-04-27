@@ -13,8 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c8c43672-cfbd-4bbe-bb87-096f813aa196" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/HashHistogram.txt" afterPath="$PROJECT_DIR$/HashHistogram.txt" />
-      <change beforePath="$PROJECT_DIR$/LinearChaning.h" afterPath="$PROJECT_DIR$/LinearChaning.h" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinearChaining.dir/main.cpp.obj" afterPath="" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinearChaining.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinearChaining.dir/objects.a" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/LinearChaining.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/LinearChaining.exe" />
@@ -321,7 +319,7 @@
       <workItem from="1524244576474" duration="2878000" />
       <workItem from="1524594097379" duration="104000" />
       <workItem from="1524765442269" duration="4649000" />
-      <workItem from="1524837150848" duration="12630000" />
+      <workItem from="1524837150848" duration="12699000" />
     </task>
     <task id="LOCAL-00001" summary="grow() in progress">
       <created>1524850401783</created>
@@ -330,11 +328,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524850401783</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="amazing hash!">
+      <created>1524851594344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524851594344</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45635000" />
+    <option name="totallyTimeSpent" value="45704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -404,7 +409,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="grow() in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="grow() in progress" />
+    <MESSAGE value="amazing hash!" />
+    <option name="LAST_COMMIT_MESSAGE" value="amazing hash!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
