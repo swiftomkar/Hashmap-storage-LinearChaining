@@ -28,21 +28,20 @@ private:
             }
     }*/
 
-    int hash(char* key,int n){
+    int hash(std::string key,int n){
         int ret;
         std::string myKey=std::string(key);
         int strsum=0;
         for(int i=0;i<myKey.length();i++){
             strsum+=key[i];
         }
-
         ret=strsum%n;
         return ret;
     }
 public:
     linearChaining(int initSize=10):size(0),capacity(initSize),arr(new linkedlist[initSize]){}
 
-    void add(char* key){
+    void add(std::string key){
 
         int pos=hash(key,capacity);
         //uint64 spookyPos=SpookyHash::Hash64(&key, sizeof(key),97);
@@ -58,7 +57,7 @@ public:
         size++;
     }
 
-    char* find(char* key){
+    std::string find(std::string key){
         int pos=hash(key,capacity);
         //uint64 spookyPos=SpookyHash::Hash64(&key, sizeof(key),97);
         //uint64_t pos=spookyPos&(initSize-1);
@@ -77,9 +76,18 @@ public:
         std::ifstream file;
         file.open(filename);
         while(!file.eof()){
-            char* wordHolder;
+            std::string wordHolder;
             file>>wordHolder;
             add(wordHolder);
+        }
+    }
+    void checkList(std::string filename){
+        std::ifstream file;
+        file.open(filename);
+        while(!file.eof()){
+            std::string wordHolder;
+            file>>wordHolder;
+            std::cout<<find(wordHolder)<<'\n';
         }
     }
     void histogram(){
@@ -98,8 +106,12 @@ public:
             hist<<histArr[i];
             hist<<"\n";
         }
-        for(int i=1;i<=10;i++)
-            std::cout<<histArr[i]<<" ";
+        for(int i=1;i<=10;i++) {
+            if (i == 10)
+                std::cout << "Number of bins with " << i << " and more elements: " << histArr[i] << "\n";
+            else
+                std::cout << "Number of bins with " << i << " elements: " << histArr[i] << "\n";
+        }
         hist.close();
     }
 };
