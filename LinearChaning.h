@@ -33,7 +33,7 @@ private:
             }
     }
 
-    int hash(std::string key,int n){
+    int hash2(std::string key,int n){
         int ret;
         std::string myKey=std::string(key);
         int strsum=0;
@@ -42,6 +42,17 @@ private:
         }
         ret=strsum%n;
         return ret;
+    }
+    unsigned long hash(std::string mystr,int n) {
+        const char* str=mystr.c_str();
+        unsigned long hash = 5381;
+        int c;
+
+        while (c = *str++)
+            hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
+        hash=hash%n;
+
+        return hash;
     }
 public:
     linearChaining(int initSize=10):size(0),capacity(initSize),arr(new linkedlist[initSize]){}
@@ -52,7 +63,7 @@ public:
         }
         int pos=hash(key,capacity);
         //uint64 spookyPos=SpookyHash::Hash64(&key, sizeof(key),97);
-        //uint64_t pos=spookyPos&(initSize-1);
+        //uint64_t pos=spookyPos&(capacity-1);
         linkedlist::iterator i(arr[pos]);
         if(!i==0){
             size++;
@@ -68,8 +79,7 @@ public:
     std::string find(std::string key){
         int pos=hash(key,capacity);
         //uint64 spookyPos=SpookyHash::Hash64(&key, sizeof(key),97);
-        //uint64_t pos=spookyPos&(initSize-1);
-        //linkedlist<int> find=arr[pos];
+        //uint64_t pos=spookyPos&(capacity-1);
         if(arr[pos].head== nullptr)
             return "-1";
         linkedlist::iterator i(arr[pos]);
