@@ -14,8 +14,7 @@
     <list default="true" id="c8c43672-cfbd-4bbe-bb87-096f813aa196" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/HashHistogram.txt" afterPath="$PROJECT_DIR$/HashHistogram.txt" />
-      <change beforePath="$PROJECT_DIR$/LinearChaning.h" afterPath="$PROJECT_DIR$/LinearChaning.h" />
-      <change beforePath="$PROJECT_DIR$/check.txt" afterPath="$PROJECT_DIR$/check.txt" />
+      <change beforePath="$PROJECT_DIR$/check.txt" afterPath="$PROJECT_DIR$/hw8.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinearChaining.dir/main.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinearChaining.dir/main.cpp.obj" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinearChaining.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinearChaining.dir/objects.a" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/LinearChaining.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/LinearChaining.exe" />
@@ -45,8 +44,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="225">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,8 +54,8 @@
       <file leaf-file-name="LinearChaning.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LinearChaning.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="400">
+              <caret line="28" column="57" lean-forward="true" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
               <folding>
                 <element signature="e#59#77#0" expanded="true" />
               </folding>
@@ -64,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedList.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LinkedList.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LinkedList.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
+            <state relative-caret-position="1250">
               <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <element signature="e#58#77#0" expanded="true" />
@@ -76,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/check.txt">
+      <file leaf-file-name="hw8.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw8.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <state relative-caret-position="275">
+              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -89,8 +88,8 @@
       <file leaf-file-name="dict.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dict.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="309" column="0" lean-forward="false" selection-start-line="309" selection-start-column="0" selection-end-line="320" selection-end-column="6" />
+            <state relative-caret-position="127">
+              <caret line="306" column="9" lean-forward="true" selection-start-line="306" selection-start-column="9" selection-end-line="306" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -108,7 +107,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jenkins.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jenkins.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jenkins.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3225">
@@ -146,8 +145,8 @@
         <option value="$PROJECT_DIR$/LinkedList.h" />
         <option value="$PROJECT_DIR$/smallList.txt" />
         <option value="$PROJECT_DIR$/dict.txt" />
-        <option value="$PROJECT_DIR$/check.txt" />
         <option value="$PROJECT_DIR$/LinearChaning.h" />
+        <option value="$PROJECT_DIR$/check.txt" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -333,7 +332,7 @@
       <workItem from="1524244576474" duration="2878000" />
       <workItem from="1524594097379" duration="104000" />
       <workItem from="1524765442269" duration="4649000" />
-      <workItem from="1524837150848" duration="13970000" />
+      <workItem from="1524837150848" duration="14756000" />
     </task>
     <task id="LOCAL-00001" summary="grow() in progress">
       <created>1524850401783</created>
@@ -356,11 +355,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524851646352</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="amazing hash!">
+      <created>1524852942146</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1524852942146</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46975000" />
+    <option name="totallyTimeSpent" value="47761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -821,13 +827,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jenkins.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3225">
-          <caret line="129" column="25" lean-forward="false" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="25" />
+        <state relative-caret-position="225">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinearChaning.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="28" column="57" lean-forward="true" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
           <folding>
-            <element signature="e#645#664#0" expanded="true" />
+            <element signature="e#59#77#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#58#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dict.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="306" column="9" lean-forward="true" selection-start-line="306" selection-start-column="9" selection-end-line="306" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -841,46 +881,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check.txt">
+    <entry file="file://$PROJECT_DIR$/jenkins.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dict.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="309" column="0" lean-forward="false" selection-start-line="309" selection-start-column="0" selection-end-line="320" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinearChaning.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="3225">
+          <caret line="129" column="25" lean-forward="false" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="25" />
           <folding>
-            <element signature="e#59#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedList.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="e#58#77#0" expanded="true" />
+            <element signature="e#645#664#0" expanded="true" />
           </folding>
         </state>
       </provider>
