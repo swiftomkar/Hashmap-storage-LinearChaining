@@ -10,38 +10,44 @@ template <typename T>
 class linearChaining{
 private:
     int initSize;
-    linkedlist<T>* arr;
+    linkedlist* arr;
     int size;
     int capacity;
-    void grow(){
-        linkedlist<T>* bkp=arr;
-        arr=new linkedlist<T>[capacity*2];
+    /*void grow(){
+        linkedlist* bkp=arr;
+        arr=new linkedlist[capacity*2];
         capacity=2*capacity;
         for(int i=0;i<capacity;i++)
             arr[i].head= nullptr;
         for(int i=0;i<size;i++)
             if(bkp[i].head!= nullptr) {
-                uint64_t pos = SpookyHash::Hash64(&(bkp[i].head), capacity,97);
-                linkedlist<T> temp = arr[pos];
+                //uint64_t pos = SpookyHash::Hash64(&(bkp[i].head), capacity,97);
+                int pos=hash(bkp[i].head->data,capacity);
+                linkedlist temp = arr[pos];
                 temp=bkp[i];
             }
-    }
-    int hash(T key,int n){
+    }*/
+
+    int hash(char* key,int n){
         int ret;
-        ret=key%n;
+        std::string myKey=std::string(key);
+        int strsum=0;
+        for(int i=0;i<myKey.length();i++){
+            strsum+=key[i];
+        }
+
+        ret=strsum%n;
         return ret;
     }
 public:
-    linearChaining(int initSize):size(0),capacity(initSize),arr(new T[initSize]){}
+    linearChaining(int initSize=10):size(0),capacity(initSize),arr(new linkedlist[initSize]){}
 
-    void add(T key){
-        if(2*capacity<size){
-            grow();
-        }
-        //int pos=hash(key,capacity);
-        uint64 spookyPos=SpookyHash::Hash64(&key, sizeof(key),97);
-        uint32_t pos=spookyPos&(initSize-1);
-        linkedlist<int>::iterator i(arr[pos]);
+    void add(char* key){
+
+        int pos=hash(key,capacity);
+        //uint64 spookyPos=SpookyHash::Hash64(&key, sizeof(key),97);
+        //uint64_t pos=spookyPos&(initSize-1);
+        linkedlist::iterator i(arr[pos]);
 
         while(!i){
             if(*i==key)
@@ -52,20 +58,29 @@ public:
         size++;
     }
 
-    T find(T key){
-        //int pos=hash(key,capacity);
-        uint64 spookyPos=SpookyHash::Hash64(&key, sizeof(key),97);
-        uint64_t pos=spookyPos&(initSize-1);
-        linkedlist<int> find=arr[pos];
-        if(find.head== nullptr)
-            return -1;
+    char* find(char* key){
+        int pos=hash(key,capacity);
+        //uint64 spookyPos=SpookyHash::Hash64(&key, sizeof(key),97);
+        //uint64_t pos=spookyPos&(initSize-1);
+        //linkedlist<int> find=arr[pos];
+        if(arr[pos].head== nullptr)
+            return "-1";
         linkedlist::iterator i(arr[pos]);
         while(!i){
             if(*i==key)
                 return key;
             ++i;
         }
-        return -1;
+        return "-1";
+    }
+    void readList(std::string filename){
+        std::ifstream file;
+        file.open(filename);
+        while(!file.eof()){
+            char* wordHolder;
+            file>>wordHolder;
+            add(wordHolder);
+        }
     }
     void histogram(){
         std::ofstream hist;

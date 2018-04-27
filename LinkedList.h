@@ -3,28 +3,28 @@
 //
 #pragma once
 #include <iostream>
-template <typename T>
+#include <string>
 class linkedlist{
 public:
     class node{
     public:
-        T data;
+        char* data;
         node* next;
-        node(T data, node* next):data(data),next(next){}
+        node(char* data, node* next):data(data),next(next){}
     };
     node* head;
     int size=0;
 
     linkedlist():head(nullptr){}
     //**************************
-    void addfront(T v){
+    void addfront( char* v){
         node* temp=new node(v,head);
         head=temp;
         size++;
     }
     //***********************
 
-    void addback(T v){
+    void addback(char* v){
         if(head== nullptr)
             addfront(v);
         else {
@@ -35,11 +35,11 @@ public:
             i->next = temp;
         }
     }
-    int removefront(){
+    char* removefront(){
         if(head== nullptr)
             return 0;
         node* rem=head;
-        int data=rem->data;
+        char* data=rem->data;
         head=rem->next;
         delete rem;
         size--;
@@ -80,7 +80,7 @@ public:
             return *this;
         }
 
-        int operator*() const {
+        char* operator*() const {
             return current->data;
         }
     };

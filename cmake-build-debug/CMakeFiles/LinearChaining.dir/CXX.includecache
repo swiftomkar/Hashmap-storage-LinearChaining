@@ -17,6 +17,8 @@ C:/Users/Omkar Desai/Documents/C++/LinearChaining/jenkins.h
 C:/Users/Omkar Desai/Documents/C++/LinearChaining/LinkedList.h
 iostream
 -
+string
+-
 
 C:/Users/Omkar Desai/Documents/C++/LinearChaining/jenkins.cpp
 memory.h
@@ -33,4 +35,6 @@ stdint.h
 C:/Users/Omkar Desai/Documents/C++/LinearChaining/main.cpp
 LinearChaning.h
 C:/Users/Omkar Desai/Documents/C++/LinearChaining/LinearChaning.h
+cstring
+-
 
