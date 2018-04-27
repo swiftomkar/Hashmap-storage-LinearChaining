@@ -6,7 +6,6 @@
 #include <fstream>
 #include "LinkedList.h"
 #include "jenkins.h"
-template <typename T>
 class linearChaining{
 private:
     int initSize;
@@ -46,10 +45,10 @@ private:
     unsigned long hash(std::string mystr,int n) {
         const char* str=mystr.c_str();
         unsigned long hash = 5381;
-        int c;
+        int c=0;
 
         while (c = *str++)
-            hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
+            hash = ((hash << 5) + hash) + c;
         hash=hash%n;
 
         return hash;
