@@ -44,7 +44,7 @@ private:
     }
     unsigned long hash(std::string mystr,int n) {
         const char* str=mystr.c_str();
-        unsigned long hash = 5381;
+        unsigned long hash = 650011;
         int c=0;
 
         while (c = *str++)
