@@ -1,11 +1,11 @@
 # LinearChaining 
 ## A hash map implementation of Bob Jenkin's hashing technique 
 ### Introduction
-https://burtleburtle.net/bob/ (A lot of interesting things to read here!)
 
 Made this out of curiosity of hash maps and how they store and get back data in ~O(1)! 
 The idea is to explore if hashing techniques can be imporved.
 ### Linear Chaining - Concept
+
 * The idea is to have a hash function eg: hash(key) = key mod n (The one used in this project is different).
 * The hash function maps a location on an array.
 * Every location on the array is a header to a linked list.
@@ -54,3 +54,4 @@ Results:
 0
 0
 ```
+https://burtleburtle.net/bob/ (A lot of interesting things to read here!)
