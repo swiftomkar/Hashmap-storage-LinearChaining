@@ -1,9 +1,46 @@
 # LinearChaining 
 ## A hash map implementation of Bob Jenkin's hashing technique 
+### Introduction
 https://burtleburtle.net/bob/
 
 Made this out of curiosity of hash maps and how they store and get back data in ~O(1)! 
 The idea is to explore if hashing techniques can be imporved.
+### Linear Chaining - Concept
+* The idea is to have a hash function eg: hash(key) = key mod n (The one used in this project is different).
+* The hash function maps a location on an array.
+* Every location on the array is a header to a linked list.
+* The data is put into that linked list.
+
+### Algorithm (Data Stucture)
+```
+LinearChaining.add(key)
+	pos ← hash(key)
+	p ← table[pos].head
+	while p != null
+		if p.key == key
+			replace the value
+			return
+		p = p.next
+	end
+	table[pos].addStart(key)
+end
+
+LinearChaining.find(key)
+	pos ← hash(key)
+	p ← table[pos].head
+	while p != null
+		if p.key == key
+			return true
+		p = p.next
+	end
+	return false
+end
+
+class HashMapLinearChaining
+private:
+   LinkedList[] table;
+
+```
 
 The evaluation was done by loading an english dictionary in the hashmap. The results look good.
 
