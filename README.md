@@ -1,5 +1,6 @@
 # LinearChaining 
-## A hash map implementation of Bob Jenkin's hashing technique [https://burtleburtle.net/bob/]
+## A hash map implementation of Bob Jenkin's hashing technique 
+https://burtleburtle.net/bob/
 
 Made this out of curiosity of hash maps and how they store and get back data in ~O(1)! 
 The idea is to explore if hashing techniques can be imporved.
