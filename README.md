@@ -1,7 +1,7 @@
 # LinearChaining 
 ## A hash map implementation of Bob Jenkin's hashing technique 
 ### Introduction
-https://burtleburtle.net/bob/
+https://burtleburtle.net/bob/ (A lot of interesting things to read here!)
 
 Made this out of curiosity of hash maps and how they store and get back data in ~O(1)! 
 The idea is to explore if hashing techniques can be imporved.
@@ -11,7 +11,7 @@ The idea is to explore if hashing techniques can be imporved.
 * Every location on the array is a header to a linked list.
 * The data is put into that linked list.
 
-### Algorithm (Data Stucture)
+### Algorithm
 ```
 LinearChaining.add(key)
 	pos ← hash(key)
@@ -41,6 +41,7 @@ private:
    LinkedList[] table;
 
 ```
+The hash function is picked up from https://burtleburtle.net/bob/hash/spooky.html
 
 The evaluation was done by loading an english dictionary in the hashmap. The results look good.
 
